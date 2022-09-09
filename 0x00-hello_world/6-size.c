@@ -3,6 +3,7 @@
 /**
 * main - Entry point
 * @void: No argument
+*
 * Return: 0
 */
 
