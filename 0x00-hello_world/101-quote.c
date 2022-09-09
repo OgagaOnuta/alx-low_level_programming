@@ -2,11 +2,11 @@
 #include <unistd.h>
 
 /**
-* main - Entry point
-* @void: No argument
-*
-* Return: 1
-*/
+ * main - Entry point
+ * @void: No argument
+ *
+ * Return: 1
+ */
 
 int main(void)
 {
