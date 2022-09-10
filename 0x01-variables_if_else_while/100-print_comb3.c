@@ -21,20 +21,22 @@ int main(void)
 		{
 			putchar(first);
 			putchar(countSecond);
-			putchar(',');
-			putchar(' ');
-			countSecond++;
-
+			if (first == '8' && countSecond == '9')
+			{
+				putchar('\n');
+				return (0);
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
 			if (first == countSecond)
 			{
 				return (0);
 			}
-		}
 
-		if (first == '8' && second == '9')
-		{
-			putchar('\n');
-			return (0);
+			countSecond++;
 		}
 
 		first++;
