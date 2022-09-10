@@ -9,38 +9,30 @@
 
 int main(void)
 {
-	int first = '0';
-	int second = '1';
-	int countSecond = '0';
+	int first = '0', second;
 
-	while (first <= '8' && second <= '9' && first < second)
+	while (first <= '8')
 	{
-		countSecond = second;
-
-		while (countSecond <= '9')
+		second = '1';
+		while (second <= '9')
 		{
-			putchar(first);
-			putchar(countSecond);
-			if (first == '8' && countSecond == '9')
+			if (first != second && first < second)
 			{
-				putchar('\n');
-				return (0);
+				putchar(first);
+				putchar(second);
+				if (first == '8' && second == '9')
+				{
+					putchar('\n');
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			if (first == countSecond)
-			{
-				return (0);
-			}
-
-			countSecond++;
+			second++;
 		}
-
 		first++;
-		second++;
 	}
 
 	return (0);
