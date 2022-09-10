@@ -21,20 +21,20 @@ int main(void)
 			while (t3 <= '9')
 			{
 				F1 = f1, S2 = s2, T3 = t3;
-				if ((F1 < S2 && S2 < T3) && (F1 != '7'))
+				if (F1 < S2 && S2 < T3)
 				{
 					putchar(F1);
 					putchar(S2);
 					putchar(T3);
-					putchar(',');
-					putchar(' ');
-				}
-				if (F1 == '7' && S2 == '8' && T3 == '9')
-				{
-					putchar(F1);
-					putchar(S2);
-					putchar(T3);
-					putchar('\n');
+					if (F1 == '7' && S2 == '8' && T3 == '9')
+					{
+						putchar('\n');
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 				t3++;
 			}
