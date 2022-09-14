@@ -16,28 +16,19 @@ void jack_bauer(void)
 
 	while (a <= 2)
 	{
-		a1 = a;
-		b1 = 0;
+		a1 = a, b1 = 0;
 
 		while (b1 <= 3)
 		{
-			a2 = a1;
-			b2 = b1;
-			c2 = 0;
+			a2 = a1, b2 = b1, c2 = 0;
 
 			while (c2 <= 5)
 			{
-				a3 = a2;
-				b3 = b2;
-				c3 = c2;
-				d3 = 0;
+				a3 = a2, b3 = b2, c3 = c2, d3 = 0;
 
 				while (d3 <= 9)
 				{
-					a0 = a3;
-					b0 = b3;
-					c0 = c3;
-					d0 = d3;
+					a0 = a3, b0 = b3, c0 = c3, d0 = d3;
 
 					_putchar(a0 + '0');
 					_putchar(b0 + '0');
@@ -46,13 +37,13 @@ void jack_bauer(void)
 					_putchar(d0 + '0');
 					_putchar('\n');
 					d3++;
-					break;
+					return;
 				}
 				c2++;
-				break;
+				return;
 			}
 			b1++;
-			break;
+			return;
 		}
 		a++;
 	}
