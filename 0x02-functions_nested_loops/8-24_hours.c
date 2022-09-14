@@ -22,14 +22,14 @@ void jack_bauer(void)
 		while (b1 <= 3)
 		{
 			a2 = a1;
-			b2 = b1
+			b2 = b1;
 			c2 = 0;
 
 			while (c2 <= 5)
 			{
 				a3 = a2;
 				b3 = b2;
-				c3 = c2
+				c3 = c2;
 				d3 = 0;
 
 				while (d3 <= 9)
