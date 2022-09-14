@@ -4,7 +4,7 @@
  * print_alphabet - Entry point
  * @void: No argument
  *
- * Return: 0
+ * Return: void
  */
 
 void print_alphabet(void)
