@@ -10,8 +10,8 @@
 int print_last_digit(int D)
 {
 	int lastD = _abs(D) % 10;
-	char lastD = 'lastD';
+	char chlastD = 'lastD';
 
-	_putchar(lastD);
+	_putchar(chlastD);
 	return (lastD);
 }
