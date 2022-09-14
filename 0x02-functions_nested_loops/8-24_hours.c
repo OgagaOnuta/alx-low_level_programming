@@ -35,8 +35,10 @@ void jack_bauer(void)
 					break;
 				}
 				c++;
+				break;
 			}
 			b++;
+			break;
 		}
 		a++;
 	}
