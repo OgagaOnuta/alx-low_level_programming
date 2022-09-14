@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_last_digit - Print last digit of number
  * @D: Number to be evaluated
@@ -7,7 +9,9 @@
 
 int print_last_digit(int D)
 {
-	int lastD = D % 10;
+	int lastD = _abs(D) % 10;
+	char lastD = 'lastD';
 
+	_putchar(lastD);
 	return (lastD);
 }
