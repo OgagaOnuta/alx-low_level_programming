@@ -9,18 +9,18 @@
 
 void print_alphabet_x10(void)
 {
-	char lowAlpha;
-	int i = 0;
+	char lowAlpha = 'a';
+	int i;
 
-	while (i < 10)
+	while (lowAlpha <= 'z')
 	{
-		lowAlpha = 'a';
+		_putchar(lowAlpha);
+		i = 0;
 
-		while (lowAlpha <= 'z')
+		while (i < 10)
 		{
-			_putchar(lowAlpha);
-			lowAlpha++;
+			_putchar('\n');
 		}
-		_putchar('\n');
+		lowAlpha++;
 	}
 }
