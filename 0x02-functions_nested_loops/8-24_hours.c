@@ -37,13 +37,13 @@ void jack_bauer(void)
 					_putchar(d0 + '0');
 					_putchar('\n');
 					d3++;
-					return;
+					return (0);
 				}
 				c2++;
-				return;
+				return (0);
 			}
 			b1++;
-			return;
+			return (0);
 		}
 		a++;
 	}
