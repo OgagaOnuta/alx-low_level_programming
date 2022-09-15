@@ -1,24 +1,27 @@
 #include "main.h"
 
 /**
- * print_line - Draws a straight line
+ * print_diagonal - Draws a diagonal line
  * @n: Number of times line should be drawn
  *
  * Return: void
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
-	int i = 1;
-
-	while (i <= n)
+	if (n > 0)
 	{
-		if (n <= 0)
+		int i = 1;
+
+		while (i <= n)
 		{
-			break;
+			_putchar('\\');
+			_putchar('\n');
+			i++;
 		}
-		_putchar('\\');
-		i++;
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
