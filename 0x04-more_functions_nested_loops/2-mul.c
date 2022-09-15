@@ -1,6 +1,7 @@
 /**
  * mul - Multiplies two integers
- * @a, @b: Arguments to be multiplied
+ * @a: Argument to be multiplied
+ * @b: Argument to be multiplied
  *
  * Return: result of multiplication
  */
