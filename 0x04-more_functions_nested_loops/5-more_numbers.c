@@ -9,19 +9,25 @@
 
 void more_numbers(void)
 {
-	int numB;
-	int i = 0;
+	char i = 1, j;
+	char numA, numB;
 
-	while (i <= 9)
+	while (i <= 10)
 	{
-		numB = 0;
-		while (numB <= 14)
+		j = 0;
+		while (j <= 14)
 		{
-			_putchar(numB + '0');
-			numB++;
+			numA = j / 10;
+			numB = j % 10;
+
+			if (numA)
+			{
+				_putchar(numA + '0');
+			}
+				_putchar(numB + '0');
+			j++;
 		}
 		_putchar('\n');
 		i++;
 	}
-	_putchar('\n');
 }
