@@ -19,12 +19,6 @@ void jack_bauer(void)
 		while (b0 <= 59)
 		{
 			a0 = a;
-/*
-			if (a0 <= 9 || b0 <= 9)
-			{
-				
-			}
-*/
 			_putchar(a0 + '0');
 			_putchar(':');
 			_putchar(b0 + '0');
