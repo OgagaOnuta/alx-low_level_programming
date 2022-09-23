@@ -6,6 +6,7 @@
  * @src: String to be copied
  * @n: Not more than n bytes shall be copied
  *
+ * Return: Copied string
  */
 
 char *_strncpy(char *dest, char *src, int n)
