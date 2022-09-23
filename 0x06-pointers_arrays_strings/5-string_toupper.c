@@ -20,15 +20,16 @@ char *string_toupper(char *s)
 		}
 		i++;
 	}
+	return (s);
 
 /*
- * unsigned char *c = (unsigned char *)s;
- *
- * while (*c)
- * {
- * *c = toupper(*c);
- * c++;
- * }
- */
-	return (s);
+* unsigned char *c = (unsigned char *)s;
+*
+* while (*c)
+* {
+* *c = toupper(*c);
+* c++;
+* }
+* return (s);
+*/
 }
