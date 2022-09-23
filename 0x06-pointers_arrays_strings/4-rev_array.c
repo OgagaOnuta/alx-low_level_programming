@@ -32,6 +32,7 @@ void reverse_array(int *a, int n)
 	while (i < (n / 2))
 	{
 		int *ap = &a[i], *bp = &a[n - i - 1];
+
 		swap_int(ap, bp);
 		i++;
 	}
