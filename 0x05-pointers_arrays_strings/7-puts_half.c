@@ -12,15 +12,6 @@ void puts_half(char *str)
 {
 	int k = strlen(str), i = (k + 1) / 2;
 
-	/*if (k % 2 == 1)
-	{
-		i = (k + 1) / 2;
-	}
-	else
-	{
-		i = k / 2;
-	}*/
-
 	while (i < k)
 	{
 		_putchar(str[i]);
