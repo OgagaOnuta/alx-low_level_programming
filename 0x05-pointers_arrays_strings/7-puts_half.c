@@ -10,12 +10,25 @@
 
 void puts_half(char *str)
 {
-	int k = strlen(str), i = k / 2;
+	int k = strlen(str), i;
 
-	while (i < k)
+	if (k % 2 == 1)
 	{
-		_putchar(str[i]);
-		i++;
+		i = (k - 1) / 2;
+		while (i < k)
+		{
+			_putchar(str[i]);
+			i++;
+		}
+	}
+	else
+	{
+		i = k / 2;
+		while (i < k)
+		{
+			_putchar(str[i]);
+			i++;
+		}
 	}
 	_putchar('\n');
 }
