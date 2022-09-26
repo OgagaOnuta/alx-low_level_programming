@@ -11,7 +11,7 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char **_string = memcpy(dest, src, n);
+	char *_string = memcpy(dest, src, n);
 
-	return (*_string);
+	return (_string);
 }
