@@ -11,7 +11,7 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	char **_string = memset(s, b, n);
+	char *_string = memset(s, b, n);
 
-	return (*_string);
+	return (_string);
 }
