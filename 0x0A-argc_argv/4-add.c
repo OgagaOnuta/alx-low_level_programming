@@ -27,7 +27,8 @@ int main(int argc, char **argv)
 				printf("Error\n");
 				return (1);
 			}
-			else if (atoi(argv[i]) > 0)
+			
+			if (atoi(argv[i]) >= 0)
 			{
 				add += atoi(argv[i]);
 				i++;
