@@ -22,15 +22,14 @@ int main(int argc, char **argv)
 		i = 1, add = 0;
 		while (i < argc)
 		{
-			if (atoi(argv[i]) == 0)
-			{
-				printf("Error\n");
-				return (1);
-			}
-			
 			if (atoi(argv[i]) >= 0)
 			{
 				add += atoi(argv[i]);
+				if (atoi(argv[i]) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
 				i++;
 			}
 		}
