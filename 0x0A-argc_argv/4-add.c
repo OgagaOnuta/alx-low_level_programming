@@ -17,7 +17,8 @@ int main(int argc, char **argv)
 	{
 		add = 0;
 	}
-	else if (argc > 1)
+	
+	if (argc > 1)
 	{
 		i = 1, add = 0;
 		while (i < argc)
