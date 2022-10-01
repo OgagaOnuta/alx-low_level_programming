@@ -11,28 +11,28 @@
 
 int main(int argc, char **argv)
 {
-	int i, add;
+	int i, sum = 0;
 
 	if (argc == 1)
 	{
-		add = 0;
+		printf("%d\n", 0);
 	}
 	
 	if (argc > 1)
 	{
-		i = 1, add = 0;
+		i = 1;
 		while (i < argc)
 		{
-			add += atoi(argv[i]);
 			if (atoi(argv[i]) == 0)
 			{
 				printf("Error\n");
 				return (1);
 			}
+			sum += atoi(argv[i]);
 			i++;
 		}
+		printf("%d\n", sum);
 	}
 
-	printf("%d\n", add);
 	return (0);
 }
