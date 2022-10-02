@@ -22,15 +22,12 @@ int main(int argc, char **argv)
 	{
 		while (i < argc)
 		{
-			if (isdigit(*argv[i]) != 0)
-			{
-				sum += atoi(argv[i]);
-			}
-			else
+			if (isdigit(*argv[i]) == 0)
 			{
 				printf("Error\n");
 				return (1);
 			}
+			sum += atoi(argv[i]);
 			i++;
 		}
 	}
