@@ -9,7 +9,7 @@
  *
  * Return: 0 if success, 1 if fail.
  */
-
+/*
 int main(int argc, char **argv)
 {
 	int i = 1, j, sum = 0;
@@ -31,4 +31,29 @@ int main(int argc, char **argv)
 	}
 	printf("%d\n", sum);
 	return (0);
+}*/
+
+int main(int argc, char **argv)
+{
+	int i = 1, j = 1, sum = 0;
+
+	while (i < argc)
+	{
+		if (isdigit(*argv[i]) == 0)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		i++;
+	}
+
+	while(j < argc)
+	{
+		sum += atoi(argv[j]);
+		j++;
+	}
+
+	printf("%d\n", sum);
+	return (0);
 }
+
