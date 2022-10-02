@@ -12,14 +12,19 @@
 
 int main(int argc, char **argv)
 {
-	int i = 1, sum = 0;
+	int i = 1, j, sum = 0;
 
 	while (i < argc)
 	{
-		if (isdigit(*argv[i]) == 0)
+		j = 0;
+		while (argv[i][j])
 		{
-			printf("Error\n");
-			return (1);
+			if (isdigit(*argv[i]) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
 		}
 		sum += atoi(argv[i]);
 		i++;
