@@ -10,10 +10,17 @@
 
 char *_strdup(char *str)
 {
-	char *copyString = malloc(sizeof(str));
+	char *copyString;
 	unsigned int i = 0;
 
-	if (copyString == NULL || str == NULL)
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
+	copyString = malloc(sizeof(char) * strlen(str));
+
+	if (copyString == NULL)
 	{
 		return (NULL);
 	}

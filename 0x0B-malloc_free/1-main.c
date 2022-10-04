@@ -11,6 +11,7 @@ int main(void)
 {
 	char *s;
 
+	/*s = _strdup("First, solve the problem. Then, write the code.");*/
 	s = _strdup(NULL);
 	if (s == NULL)
 	{
