@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * check the code for ALX School students.
+ * main - check the code for ALX School students.
  *
  * Return: Always 0.
  */
