@@ -24,7 +24,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-
 	while (i < len)
 	{
 		copyString[i] = str[i];
