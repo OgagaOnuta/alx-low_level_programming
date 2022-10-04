@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 			{
 				concatString[i] = s1[i];
 			}
-			else if (j <= strlen(s2))
+			else if (j < strlen(s2))
 			{
 				concatString[j + strlen(s1)] = s2[j];
 			}
