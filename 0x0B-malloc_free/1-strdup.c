@@ -18,7 +18,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (i < strlen(str))
+	while (i <= strlen(str))
 	{
 		copyString[i] = str[i];
 		i++;
