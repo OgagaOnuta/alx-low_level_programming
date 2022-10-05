@@ -26,13 +26,13 @@ int **alloc_grid(int width, int height)
 		if (twoDimArray[i] == NULL)
 		{
 			free(twoDimArray);
-			j = 0;
-			while (j <= i)
-			{
-				j++;
-				free(twoDimArray[j]);
-			}
 			return (NULL);
+			j = 0;
+			while (j < width)
+			{
+				free(twoDimArray[j]);
+				j++;
+			}
 		}
 		i++;
 	}
