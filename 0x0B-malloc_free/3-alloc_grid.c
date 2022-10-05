@@ -14,16 +14,12 @@ int **alloc_grid(int width, int height)
 	int i = 0, j;
 
 	if (width <= 0 || height <= 0)
-	{
 		return (NULL);
-	}
 
 	twoDimArray = malloc(sizeof(int *) * height);
 	if (twoDimArray == NULL)
-	{
 		return (NULL);
-	}
-	
+
 	while (i < height)
 	{
 		twoDimArray[i] = malloc(sizeof(int) * width);
