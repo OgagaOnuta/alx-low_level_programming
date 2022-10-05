@@ -22,7 +22,7 @@ int **alloc_grid(int width, int height)
 
 	while (i < height)
 	{
-		twoDimArray[i] = malloc(sizeof(int) * height);
+		twoDimArray[i] = malloc(sizeof(int) * width);
 		if (twoDimArray[i] == NULL)
 		{
 			free(twoDimArray);
