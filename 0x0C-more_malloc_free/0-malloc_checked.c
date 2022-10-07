@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checkde - Allocates memory using malloc function.
+ * malloc_checked - Allocates memory using malloc function.
  * @b: Size of memory
  *
  * Return: Pointer to memory on success, 98 on failure.
