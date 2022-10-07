@@ -41,17 +41,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		while (j < (len1 + n + 1))
 		{
 			if (i < len1)
-			{
 				concatnString[i] = s1[i];
-			}
 			else if (j < n)
-			{
 				concatnString[j + len1] = s2[j];
-			}
 			else
-			{
 				concatnString[len1 + n] = s2[len2];
-			}
 			j++;
 		}
 		i++;
