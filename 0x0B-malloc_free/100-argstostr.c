@@ -14,17 +14,24 @@ char *argstostr(int ac, char **av)
 {
 	char *conString;
 	int i = 0;
-	unsigned int j, len;
+	unsigned int j, len = 0;
+	
+	while (i < ac)
+	{
+		len += strlen(av[i]);
+		i++;
+	}
 
-	if (ac == 0 || av == NULL)
+	conString = malloc(sizeof(char *) * (len + ac));
+	if (conString == NULL || ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
 
+	i = 0, len = 0;
 	while (i < ac)
 	{
 		len = strlen(av[i]);
-		conString = malloc(sizeof(char) * (len + 1));
 		j = 0;
 		while (j < len)
 		{
