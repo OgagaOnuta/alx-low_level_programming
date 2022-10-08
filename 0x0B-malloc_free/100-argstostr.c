@@ -15,14 +15,14 @@ char *argstostr(int ac, char **av)
 	char *conString;
 	int i = 0;
 	unsigned int j, len = 0;
-	
+
 	while (i < ac)
 	{
 		len += strlen(av[i]);
 		i++;
 	}
 
-	conString = malloc(sizeof(char *) * (len + ac));
+	conString = malloc(sizeof(char *) * (len * ac));
 	if (conString == NULL || ac == 0 || av == NULL)
 	{
 		return (NULL);
