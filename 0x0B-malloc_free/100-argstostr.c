@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 *		i++;
 *	}
 */
-	conString = malloc(sizeof(char *));
+	conString = malloc(sizeof(char *) * (sizeof(av) * ac));
 	if (conString == NULL || ac == 0 || av == NULL)
 	{
 		return (NULL);
