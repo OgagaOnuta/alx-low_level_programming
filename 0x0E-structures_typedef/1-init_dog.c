@@ -1,6 +1,10 @@
 #include <stdlib.h>
 #include "dog.h"
 
+#define name name
+#define age age
+#define owner owner
+
 /**
  * init_dog - Initializes a variable of type struct dog
  * @d: Pointer of type struct dog
@@ -18,6 +22,5 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	mastiff.name = name;
 	mastiff.age = age;
 	mastiff.owner = owner;
-
 	*d = mastiff;
 }
