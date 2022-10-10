@@ -1,0 +1,18 @@
+#include "dog.h"
+
+/**
+ * init_dog - Initializes a variable of type struct dog
+ * @d: Pointer of type struct dog
+ * @name: Dog's name
+ * @age: Dog's age
+ * @owner: Dog's owner
+ *
+ * Return: void
+ */
+
+void init_dog(struct dog *d, char *name, float age, char *owner)
+{
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
+}
