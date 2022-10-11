@@ -1,5 +1,3 @@
-#include <stdlib.h>
-
 /**
  * _abs - Computes the absolute value of an integer
  * @x: Integer to be tested
