@@ -33,7 +33,7 @@ void times_table(void)
 					_putchar(' ');
 				}
 				_putchar(mulB + '0');
-			}		
+			}
 			if (j != 9)
 				_putchar(',');
 			j++;
