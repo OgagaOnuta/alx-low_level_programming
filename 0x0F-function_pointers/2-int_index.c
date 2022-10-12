@@ -25,7 +25,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 		while (j < size)
 		{
-			if (cmp(array[j]))
+			if (cmp(array[j]) == 0)
 				noMatch++;
 			j++;
 		}
@@ -34,5 +34,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 			return (-1);
 	}
 
-	return (0);
+	return (-1);
 }
