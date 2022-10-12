@@ -9,25 +9,17 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i = 0, noMatch = 0;
+	int i = 0;
 
 	if (cmp && array)
 	{
-		if (size <= 0)
-			return (-1);
-
 		while (i < size)
 		{
 			if (cmp(array[i]) != 0)
 				return (i);
-			if (cmp(array[i]) == 0)
-				noMatch++;
 			i++;
 		}
-
-		if (noMatch == size)
-			return (-1);
 	}
 
-	return (0);
+	return (-1);
 }
