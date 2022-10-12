@@ -30,6 +30,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (noMatch == size)
 		return (-1);
-	
+
 	return (0);
 }
