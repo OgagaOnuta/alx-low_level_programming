@@ -11,18 +11,18 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list firstArg;
+	va_list argPtr;
 	unsigned int i = 0;
 
-	va_start(firstArg, n);
+	va_start(argPtr, n);
 
 	while (i < n)
 	{
 		if (separator == NULL)
-			printf("%d", va_arg(firstArg, int));
+			printf("%d", va_arg(argPtr, int));
 		else
 		{
-			printf("%d", va_arg(firstArg, int));
+			printf("%d", va_arg(argPtr, int));
 			if (i != (n - 1))
 				printf("%s", separator);
 		}
@@ -30,5 +30,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 
-	va_end(firstArg);
+	va_end(argPtr);
 }
