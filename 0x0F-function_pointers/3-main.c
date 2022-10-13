@@ -17,17 +17,18 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
-/*	if (argv[2] != s)*/
-/*	{*/
-/*		printf("Error\n");*/
-/*		exit(99);*/
-/*		}*/
-	if ((s[3] && argv[3] == 0) || (s[4] && argv[3] == 0))
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	
-	get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]);
+/**
+ *	if (argv[2] != s)
+ *	{
+ *		printf("Error\n");
+ *		exit(99);
+ *		}
+ *	if ((s[3] && argv[3] == 0) || (s[4] && argv[3] == 0))
+ *	{
+ *		printf("Error\n");
+ *		exit(100);
+ *	}
+ */	
+	printf("%d\n", get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
