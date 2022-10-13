@@ -11,15 +11,15 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list firstArg;
+	va_list argPtr;
 	unsigned int i = 0;
 	char *b;
 
-	va_start(firstArg, n);
+	va_start(argPtr, n);
 
 	while (i < n)
 	{
-		b = va_arg(firstArg, char *);
+		b = va_arg(argPtr, char *);
 		if (b == NULL)
 			b = "(nil)";
 
@@ -35,5 +35,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 
-	va_end(firstArg);
+	va_end(argPtr);
 }
