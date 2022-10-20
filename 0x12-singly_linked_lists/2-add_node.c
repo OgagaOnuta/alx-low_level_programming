@@ -15,7 +15,7 @@ unsigned int _strlen(const char *str);
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
-	
+
 	/* Create new node with given data */
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
@@ -29,6 +29,13 @@ list_t *add_node(list_t **head, const char *str)
 
 	return (new);
 }
+
+/**
+ * _strlen - Calculates length of string
+ * @str: String
+ *
+ * Return: Length of string
+ */
 
 unsigned int _strlen(const char *str)
 {
