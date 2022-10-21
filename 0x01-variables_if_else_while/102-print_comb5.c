@@ -23,7 +23,7 @@ int main(void)
 				f4 = '1';
 				while (f4 <= '9')
 				{
-					if (f4 > s2)
+					if (s2 < f4 && f1 <= t3)
 					{
 					putchar(f1);
 					putchar(s2);
