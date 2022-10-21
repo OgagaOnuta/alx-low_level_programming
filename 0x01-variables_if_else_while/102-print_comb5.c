@@ -20,10 +20,10 @@ int main(void)
 			t3 = '0';
 			while (t3 <= '9')
 			{
-				f4 = '1';
+				f4 = '0';
 				while (f4 <= '9')
 				{
-					if (f1 <= t3 && s2 < f4)
+					if ((f1 + s2) < (t3 + f4))
 					{
 					putchar(f1);
 					putchar(s2);
