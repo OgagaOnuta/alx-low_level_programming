@@ -15,7 +15,7 @@ int main(void)
 	while (f1 <= '9')
 	{
 		s2 = '0';
-		while (s2 <= '8')
+		while (s2 <= '9')
 		{
 			t3 = '0';
 			while (t3 <= '9')
@@ -23,15 +23,19 @@ int main(void)
 				f4 = '1';
 				while (f4 <= '9')
 				{
-					if (s2 < f4 && f1 <= t3)
+					if (f1 <= t3 && s2 < f4)
 					{
 					putchar(f1);
 					putchar(s2);
 					putchar(' ');
 					putchar(t3);
 					putchar(f4);
-					if (f1 == '9' && s2 == '8' && t3 == '9')
+					if (f1 == '9' && s2 == '8' && t3 == '9' && f4 == '9')
+					{
 						putchar('\n');
+						break;
+					}
+					
 					else
 					{
 						putchar(',');
