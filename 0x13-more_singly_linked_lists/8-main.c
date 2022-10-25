@@ -25,5 +25,5 @@ int main(void)
 	sum = sum_listint(head);
 	printf("sum = %d\n", sum);
 	free_listint2(&head);
-	return (0);	
+	return (0);
 }
