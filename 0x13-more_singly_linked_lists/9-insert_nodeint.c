@@ -31,7 +31,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 		new->n = n;
 
-		/* Locate the node before the given index */		
+		/* Locate the node before the given index */
 		current = *head;
 		x = 0;
 		while (x < (idx - 1))
