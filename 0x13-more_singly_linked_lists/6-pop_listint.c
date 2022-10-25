@@ -13,7 +13,7 @@ int pop_listint(listint_t **head)
 	listint_t *pop;
 
 	/* If linked list is empty, return 0 */
-	if ((*head)->next == NULL)
+	if (*head == NULL)
 	{
 		return (0);
 	}
