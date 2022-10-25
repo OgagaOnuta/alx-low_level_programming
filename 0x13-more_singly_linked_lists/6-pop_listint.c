@@ -17,17 +17,10 @@ int pop_listint(listint_t **head)
 	{
 		return (0);
 	}
-	else
-	{
-		pop = malloc(sizeof(listint_t));
-		if (pop == NULL)
-		{
-			free(pop);
-		}
-		pop = *head; /* Store head node in a new node */
-		*head = (*head)->next; /* Make next node head node */
-		free(pop); /* Free deleted node */
-	}
 
-	return (pop->n);
+	pop = *head; /* Store head node in a new node */
+	*head = pop->next; /* Make next node head node */
+	free(pop);
+
+	return ((*head)->n);
 }
