@@ -16,36 +16,29 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new;
 	listint_t *current;
+	unsigned int x;
 	unsigned int len;
 
 	len = lenlist(*head);
-	if (len >= idx)
-	{
-		unsigned int x;
 
-		/* Create new node */
-		new = malloc(sizeof(listint_t));
-		if (new == NULL)
-		{
-			return (NULL);
-		}
-		new->n = n;
-
-		/* Locate the node before the given index */
-		current = *head;
-		x = 0;
-		while (x < (idx - 1))
-		{
-			current = current->next;
-			x++;
-		}
-		new->next = current->next; /* Point new node to next node */
-		current->next = new; /* Point located node to new node */
-	}
-	else
+	/* Create new node */
+	new = malloc(sizeof(listint_t));
+	if (new == NULL || len < idx)
 	{
 		return (NULL);
 	}
+
+	/* Locate the node before the given index */
+	current = *head;
+	x = 0;
+	while (x < (idx - 1))
+	{
+		current = current->next;
+		x++;
+	}
+	new->n = n;
+	new->next = current->next; /* Point new node to next node */
+	current->next = new; /* Point located node to new node */
 
 	return (new);
 }
