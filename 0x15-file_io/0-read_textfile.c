@@ -38,7 +38,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(fdesc);
 
 	numLettW = write(STDOUT_FILENO, buffer, letters);
-	write(STDOUT_FILENO, buffer, letters);
 	if (numLettW == -1)
 		return (0);
 
