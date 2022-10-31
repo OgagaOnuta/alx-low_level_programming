@@ -20,11 +20,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t numLettR, numLettW;
 	char *buffer;
 
+	if (filename == NULL)
+		return (0);
+	
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
-		return (0);
-
-	if (filename == NULL)
 		return (0);
 
 	fdesc = open(filename, O_RDONLY);
@@ -37,8 +37,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	close(fdesc);
 
-	numLettW = write(STDOUT_FILENO, buffer, letters);
-	if (numLettW == -1)
+	numLettW = write(STDOUT_FILENO, buffer, numLettR);
+	if (numLettW == -1 || numLettW != numLettR)
 		return (0);
 
 	free(buffer);
