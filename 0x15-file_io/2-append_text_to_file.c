@@ -19,8 +19,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	int fdesc, len;
 	ssize_t numByte;
 
-	len = _strlen(text_content);
-
 	if (filename == NULL)
 		return (-1);
 
@@ -28,18 +26,13 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (fdesc == -1)
 		return (-1);
 
-	if (text_content == NULL)
+	if (text_content)
 	{
-		text_content = "";
-		if (filename)
-			return (1);
-		else
+		len = _strlen(text_content);
+		numByte = write(fdesc, text_content, len);
+		if (numByte == -1)
 			return (-1);
 	}
-
-	numByte = write(fdesc, text_content, len);
-	if (numByte == -1)
-		return (-1);
 
 	close(fdesc);
 	return (1);
