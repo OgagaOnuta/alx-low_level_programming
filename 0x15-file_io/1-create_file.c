@@ -17,7 +17,7 @@ int _strlen(char *s);
 int create_file(const char *filename, char *text_content)
 {
 	int fdesc, len;
-	ssize_t numText;
+	ssize_t numByte;
 
 	len = _strlen(text_content);
 
@@ -31,15 +31,13 @@ int create_file(const char *filename, char *text_content)
 	if (fdesc == -1)
 		return (-1);
 
-	numText = write(fdesc, text_content, len);
+	numByte = write(fdesc, text_content, len);
 	if (numText == -1)
 		return (-1);
 
 	close(fdesc);
 	return (1);
 }
-
-#include "main.h"
 
 /**
  * _strlen - Calculates the length of a string
