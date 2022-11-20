@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	int i, x, y, sum;
+	long int i, x, y, sum;
 
 	i = 1, x = 1, y = 2;
 
-	printf("%d, %d", x, y);
-	while (i < 48)
+	printf("%ld, %ld", x, y);
+	while (i < 49)
 	{
 		sum = x + y;
+		printf(", %ld", sum);
 		x = y, y = sum;
-		printf(", %d", sum);
 		i++;
 	}
 
