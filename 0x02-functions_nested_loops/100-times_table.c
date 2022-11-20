@@ -17,13 +17,12 @@ void print_times_table(int n)
 		while (i <= n)
 		{
 			j = 1;
+			if ((j - 1) == 0)
+				_putchar('0');
 			while (j <= n)
 			{
 				mul = i * j, x = mul / 100;
 				y = (mul / 10) % 10, z = (mul % 100) % 10;
-
-				if ((j - 1) == 0)
-					_putchar('0');
 
 				if (mul < 10)
 				{
