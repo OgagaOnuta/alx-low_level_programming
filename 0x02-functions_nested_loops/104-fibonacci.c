@@ -8,15 +8,15 @@
 
 int main(void)
 {
-	long int i, x, y, sum;
+	unsigned long i, x, y, sum;
 
 	i = 1, x = 1, y = 2;
 
-	printf("%ld, %ld", x, y);
+	printf("%lu, %lu", x, y);
 	while (i < 97)
 	{
 		sum = x + y;
-		printf(", %ld", sum);
+		printf(", %lu", sum);
 		x = y, y = sum;
 		i++;
 	}
