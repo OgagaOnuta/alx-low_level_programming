@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (key != NULL)
 	{
 		hash_node_t *element;
-		unsigned long int index;	
+		unsigned long int index;
 
 		/* Create element */
 		element = malloc(sizeof(hash_node_t));
