@@ -1,8 +1,5 @@
 # Create a Makefile
-CC=gcc
-SOURCE=main.c school.c
-
 all: school
 
-school: $(SOURCE)
-	$(CC) $(SOURCE) -o school
+school: main.c school.c
+	gcc main.c school.c -o school
