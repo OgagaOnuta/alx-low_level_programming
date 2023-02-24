@@ -6,8 +6,7 @@ NAME=school
 
 all: $(NAME)
 
-school: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $@
 
-%.o: %.c
-	$(CC) -c -o $@ $<
+$(OBJ): %.o: %.c
